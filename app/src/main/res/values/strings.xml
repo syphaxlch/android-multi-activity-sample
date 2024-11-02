@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyMAFAG</string>
+    <string name="super_application_du_mafag">Super application du MAFAG</string>
+    <string name="faire_un_choix">FAIRE UN CHOIX</string>
+    <string name="ouvrir_le_mafag">OUVRIR LE MAFAG</string>
+    <string name="notifier">Notifier!</string>
+    <string name="gmail">Gmail</string>
+    <string name="github">Github</string>
+    <string name="azure">Azure</string>
+    <string name="chatgpt">Chatgpt</string>
+    <string name="amazon">Amazon</string>
 </resources>
