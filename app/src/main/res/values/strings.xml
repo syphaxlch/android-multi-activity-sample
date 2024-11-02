@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyMAFAG</string>
+    <string name="bienvenue_dans_mainactivity">Bienvenue dans MainActivity !</string>
+    <string name="aller_secondactivity">Aller à SecondActivity</string>
 </resources>
