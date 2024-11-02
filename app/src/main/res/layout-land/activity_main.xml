@@ -1,5 +1,6 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -12,17 +13,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/super_application_du_mafag"
-            android:textSize="29sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:layout_gravity="start" />
+            android:text="@string/super_application_du_mafag"
+            android:textColor="#009688"
+            android:textSize="29sp"
+            android:textStyle="bold" />
 
         <!-- Bouton "Faire un choix" qui lance SecondActivity -->
         <Button
             android:id="@+id/buttonFaireUnChoix"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/faire_un_choix"
             android:textSize="20sp"
@@ -31,12 +32,13 @@
             android:padding="12dp"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center"
-            android:backgroundTint="@android:color/holo_blue_light" />
+            android:backgroundTint="@android:color/holo_blue_light"
+            tools:ignore="VisualLintButtonSize" />
 
         <!-- Texte pour afficher le nom du MAFAG sélectionné -->
         <TextView
             android:id="@+id/selectedMafagTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:padding="12dp"
@@ -50,7 +52,7 @@
         <!-- Texte pour afficher le lien du MAFAG sélectionné -->
         <TextView
             android:id="@+id/linkTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/holo_blue_dark"
             android:background="@drawable/border_faire_un_choix"
@@ -64,19 +66,20 @@
         <!-- bouton pour ouvrir le lien -->
         <Button
             android:id="@+id/buttonOpenLink"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ouvrir_le_mafag"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
             android:background="@android:color/holo_blue_dark"
             android:padding="12dp"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center" />
+            android:text="@string/ouvrir_le_mafag"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/buttonNotifier"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/notifier"
             android:textSize="20sp"
@@ -84,6 +87,7 @@
             android:background="@android:color/holo_blue_dark"
             android:padding="12dp"
             android:layout_marginTop="5dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            tools:ignore="VisualLintButtonSize" />
     </LinearLayout>
 </ScrollView>
