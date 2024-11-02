@@ -26,10 +26,10 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
         int selectedMafagIndex = getIntent().getIntExtra("selectedMafagIndex", -1);
-
         // Désactivation de l'image sélectionnée
+        if(selectedMafagIndex == -1)
+            selectedMafagIndex = 0;
         if (selectedMafagIndex >= 0) {
             @SuppressLint("DiscouragedApi") int selectedButtonId = getResources().getIdentifier("imageButton" + selectedMafagIndex, "id", getPackageName());
             ImageButton selectedButton = findViewById(selectedButtonId);
