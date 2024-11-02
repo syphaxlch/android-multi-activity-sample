@@ -15,10 +15,6 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false" />
-        <activity android:name=".ThirdActivity" />
-        <activity android:name=".FourthActivity" />
-        <activity android:name=".FifthActivity" />
-        <activity android:name=".SixthActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
